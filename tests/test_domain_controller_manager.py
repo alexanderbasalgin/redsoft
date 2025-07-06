@@ -1,5 +1,7 @@
 import pytest
 
+#python -m pytest tests/test_domain_controller_manager.py -v
+
 @pytest.mark.parametrize("port, expected_error", [
     ("80", "Значение порта не должно быть меньше 1024."),
     ("50000", "Значение порта не должно быть больше 49151."),
